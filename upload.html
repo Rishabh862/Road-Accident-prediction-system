@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+
+    <div class="upload-container">
+        <h1>Upload</h1>
+
+        <input type="file"><br><br>
+
+        <button>Upload</button>
+    </div>
+
+
+    <script>
+function loginUser() {
+    // Get values (optional validation)
+    let username = document.querySelector('input[type="text"]').value;
+    let password = document.querySelector('input[type="password"]').value;
+
+    // Simple check (static)
+    if(username === "admin" && password === "1234") {
+        // Redirect to upload page
+        window.location.href = "upload.html";
+    } else {
+        alert("Invalid Username or Password");
+    }
+
+    return false; // prevent form reload
+}
+</script>
+
+</body>
+</html>
